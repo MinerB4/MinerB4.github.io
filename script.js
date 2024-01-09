@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Function to update the background color based on the time of day
     function updateBackgroundColor() {
         var hours = new Date().getHours();
         var minutes = new Date().getMinutes();
@@ -10,10 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         var mainContent = document.getElementById("main-content");
 		
 		function mixColors(color1, color2, percentage) {
-			if (percentage < 0 || percentage > 100) {
- 			   throw new Error('Percentage should be between 0 and 100');
-			  }
-			
 			const r1 = color1 >> 16 & 255;
 			const g1 = color1 >> 8 & 255;
 			const b1 = color1 & 255;
@@ -44,9 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Initial call to set the background color on page load
     updateBackgroundColor();
 
-    // Update the background color every minute
     setInterval(updateBackgroundColor, 30000);
 });
