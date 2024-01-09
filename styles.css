@@ -1,4 +1,6 @@
-body {
+html, body {
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: #000000;
 }
@@ -29,17 +31,23 @@ h1 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #fff1d6;
   color: black;
+  transition: background-color .2s, color .2s;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #4287f5;
   color: white;
 }
 
 .myDiv {
+  color: white;
+  text-align: center;
+}
+
+.eventText {
   color: white;
   text-align: center;
 }
