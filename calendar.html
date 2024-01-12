@@ -1,6 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="main-content" style="background-image: url('images/voxelgrid.png');">
 	<head>
+	
+		<script>
+			document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+			document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+			document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+		</script>
+	
+		<script src="script.js"></script>
+		<noscript>Your browser couldn't comprehend my power. No JavaScript!</noscript>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css">
@@ -13,15 +22,15 @@ body {
 </style>
 	</head>
 	<body>
-			 <div class="topnav">
-				<a href="index.html">Home</a>
-				<a href="calendar.html" class="active">Calendar</a>
-				<a href="social.html">Social</a>
-				<a href="about.html">About</a>
-				<p id="banner-event" class="eventText"></p>
-				<script src="event.js"></script>
-				<noscript>Your browser couldn't comprehend my power. No JavaScript!</noscript>
-			</div> 
-		<iframe src="https://calendar.google.com/calendar/embed?height=900&wkst=7&bgcolor=%23ffffff&ctz=America%2FNew_York&title=Mini's%20Planner&src=MzA4NjU3MmM3OTk0NzgyYWVkZThiY2Y0ODliMzIwNDdhM2FlN2U3ZThhODc5MzJhOGQ3MWI2YTEzZTgyZWM4YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E" style="border:solid 1px #777; width:100vw; height:100vh;" frameborder="0" scrolling="no"></iframe>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="calendar.html" class="active">Calendar</a>
+			<a href="social.html">Social</a>
+			<a href="about.html">About</a>
+			<p id="banner-event" class="eventText"></p>
+			<script src="event.js"></script>
+			<noscript>Your browser couldn't comprehend my power. No JavaScript!</noscript>
+		</div> 
+		<iframe src="https://calendar.google.com/calendar/embed?height=900&wkst=7&bgcolor=%23ffffff&ctz=America%2FNew_York&title=Mini's%20Planner&src=MzA4NjU3MmM3OTk0NzgyYWVkZThiY2Y0ODliMzIwNDdhM2FlN2U3ZThhODc5MzJhOGQ3MWI2YTEzZTgyZWM4YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E" style="border:solid 1px #777; width:98vw; height:92vh; margin: 10px;" frameborder="0" scrolling="no"></iframe>
 	</body>
 </html>
